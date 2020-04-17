@@ -1,0 +1,180 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* end reset */
+
+/* general rules */
+body {
+  font-family: "Roboto", Verdana;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  width: 1280px;
+  margin: auto;
+  height: 100%;
+  position: relative;
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+/* end general rules */
+
+/* header */
+header {
+  color: white;
+  background-color: #0b325a;
+  height: 600px;
+  background-size: 1200px;
+  background-position: 80%;
+  background-repeat: no-repeat;
+  background-image: url(../img/background-header.png);
+  background-position-y: 100%;
+}
+
+/* navigation menu */
+
+header .navigation {
+  padding-top: 10px;
+}
+
+header .navigation .col {
+  float: left;
+}
+
+header .navigation .logo {
+  width: 15%;
+}
+
+header .navigation .menu-center {
+  width: 45%;
+}
+
+header .navigation .menu-right {
+  width: 40%;
+}
+
+header .navigation .menu {
+  margin-top: 16px;
+}
+
+header .navigation .menu li {
+  display: inline-block;
+}
+
+header .navigation .menu li a{
+ text-decoration: none;
+ color: white;
+ text-transform: uppercase;
+ font-size: 15px;
+ margin-right: 10px;
+}
+
+header .navigation .menu li a:hover {
+  color: orange;
+}
+
+header .navigation .menu li a.login {
+  padding: 7px 25px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+header .navigation .menu li a.menu-item-green {
+  padding: 7px 12px;
+  border-radius: 5px;
+  background-color: #7fb802;
+}
+/* end navigation menu */
+
+/* teaser */
+header .teaser {
+  position: absolute;
+  width: 700px;
+  top:30%;
+}
+
+header .teaser h1 {
+  font-size: 60px;
+}
+
+header .teaser a {
+  color: white;
+  display: inline-block;
+  background-color: #7fb802;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 20px;
+  width: 165px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+/* end teaser */
+
+/* grey row */
+
+body .greyrow {
+  width: 100%;
+  background: #c1c1c1;
+  height: 150px;
+}
+/* NOTE: da capire perche le classi non posso addizzionare */
+
+.prova {
+  padding: 30px 20px ;
+  text-align: center;
+}
+
+.prova h4{
+  font-size: 28px;
+  padding: 3px;
+}
+
+.prova p {
+  font-size: 21px;
+  color: #828282;
+}
+
+/* end rey row */
+
+/* inizio main */
+
+main {
+  width: 1280px;
+  margin: auto;
+  height: 100%;
+  position: relative;
+}
+
+main .section-up {
+  padding: 20px 30px;
+}
+
+
+main .section-up .list-section li {
+  display: inline-block;
+  text-align: center;
+  height: 50%;
+  width: 33%;
+}
+
+main .section-up .list-section .imagineprofile img{
+  height: 200px;
+  width: 200px;
+}
+
+main .section-up .list-section .text h6 {
+  font-size: 20px;
+  color: #7fb802;
+}
