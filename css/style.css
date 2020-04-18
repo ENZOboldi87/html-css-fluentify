@@ -11,21 +11,25 @@ body {
   font-family: "Roboto", Verdana;
 }
 
-ul {
-  list-style-type: none;
-}
-
-.container {
+body .container {
   width: 1280px;
   margin: auto;
   height: 100%;
   position: relative;
 }
 
-.clearfix::after {
+body .clearfix::after {
   content: '';
   display: table;
   clear: both;
+}
+
+body .col {
+  float: left;
+}
+
+ul {
+  list-style-type: none;
 }
 /* end general rules */
 
@@ -45,10 +49,6 @@ header {
 
 header .navigation {
   padding-top: 10px;
-}
-
-header .navigation .col {
-  float: left;
 }
 
 header .navigation .logo {
@@ -119,48 +119,41 @@ header .teaser a {
   text-transform: uppercase;
   font-size: 15px;
 }
-
 /* end teaser */
+/* end header */
 
 /* grey row */
-
 body .greyrow {
   width: 100%;
   background: #c1c1c1;
   height: 150px;
 }
-/* NOTE: da capire perche le classi non posso addizzionare */
 
-.prova {
+.text-greyrow {
   padding: 30px 20px ;
   text-align: center;
 }
 
-.prova h4{
+.text-greyrow h4{
   font-size: 28px;
   padding: 3px;
 }
 
-.prova p {
+.text-greyrow p {
   font-size: 21px;
   color: #828282;
 }
+/* end grey row */
 
-/* end rey row */
-
-/* inizio main */
-
-main {
-  width: 1280px;
-  margin: auto;
-  height: 100%;
-  position: relative;
+/*  main  */
+main .col {
+  float: left;
+  width: 50%
 }
 
 main .section-up {
   padding: 20px 30px;
 }
-
 
 main .section-up .list-section li {
   display: inline-block;
@@ -178,3 +171,69 @@ main .section-up .list-section .text h6 {
   font-size: 20px;
   color: #7fb802;
 }
+
+main .section-bottom .left {
+  left: 20%;
+  padding: 50px 30px;
+}
+
+main .section-bottom .right {
+  padding: 80px;
+}
+
+main .section-bottom .right h2 {
+  font-size: 38px;
+}
+
+main .section-bottom .right p {
+  font-size: 20px;
+  color: #8b8b8b;
+  padding-bottom: 10px;
+}
+/* end main */
+
+/* footer */
+footer {
+  background: lightgrey;
+  height: 200px;
+}
+
+footer .left {
+  width: 50%;
+  padding-top: 50px;
+}
+
+footer .right {
+  width: 50%;
+  padding-top: 70px;
+}
+
+footer .footer-content .left h3 {
+  font-size: 50px;
+}
+
+footer .footer-content .right .menu-footer li{
+  display: inline-block;
+}
+
+footer .footer-content .right .menu-footer li a.footer-item-green {
+  padding: 19px 13px;
+  border-radius: 7px;
+  background-color: #7fb802;
+}
+
+footer .footer-content .right .menu-footer li a{
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+footer .footer-content .right .menu-footer li a:hover {
+  color: orange;
+}
+
+footer .footer-content .right .menu-footer li p {
+  color: grey;
+}
+/* end footer */
