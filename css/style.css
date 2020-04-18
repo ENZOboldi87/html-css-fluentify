@@ -37,9 +37,9 @@ ul {
 header {
   color: white;
   background-color: #0b325a;
-  height: 600px;
-  background-size: 1200px;
-  background-position: 80%;
+  height: 500px;
+  background-size: 940px;
+  background-position: 70%;
   background-repeat: no-repeat;
   background-image: url(../img/background-header.png);
   background-position-y: 100%;
