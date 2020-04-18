@@ -142,6 +142,7 @@ body .greyrow {
 .text-greyrow p {
   font-size: 21px;
   color: #828282;
+  padding-top: 10px;
 }
 /* end grey row */
 
